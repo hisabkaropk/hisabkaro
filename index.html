@@ -97,7 +97,15 @@
   ]
 }
 </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TYMH3KCQ1J"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'G-TYMH3KCQ1J');
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -169,8 +177,8 @@
   .hero-band::after{
     content:"";
     position:absolute; left:0; right:0; bottom:-1px; height:24px;
-    background-image: radial-gradient(circle at 12px 0, transparent 12px, var(--bg) 12.5px);
-    background-size:24px 24px;
+    /* background-image: radial-gradient(circle at 12px 0, transparent 12px, var(--bg) 12.5px);
+    background-size:24px 24px; */
     background-repeat:repeat-x;
   }
   .eyebrow{
@@ -196,7 +204,7 @@
 
   /* Calculator tab switcher */
   .calc-tabs{
-    display:flex; gap:8px; flex-wrap:wrap; margin:-46px 0 18px;
+    display:flex; gap:8px; flex-wrap:wrap; margin:-60px 0 18px;
     position:relative; z-index:2;
   }
   .calc-tab{
@@ -241,7 +249,7 @@
     background:var(--paper);
     border:1px solid var(--line);
     border-radius:14px;
-    margin:0 0 40px;
+    margin:40px 0 40px;
     position:relative;
     overflow:hidden;
     box-shadow:0 24px 48px -22px rgba(10,31,68,0.35), 0 4px 14px rgba(10,31,68,0.08);
@@ -591,6 +599,7 @@
 </nav>
 
 <div class="hero-band">
+
   <div class="wrap">
     <header class="top">
       <div class="eyebrow">Pakistan &middot; FBR Tax Year 2027</div>
@@ -598,6 +607,7 @@
       <p class="sub">Enter your gross monthly salary. This applies the official FY 2026-27 FBR slabs for salaried individuals &mdash; the same ones effective from July 1, 2026.</p>
     </header>
   </div>
+
 </div>
 
 <div class="wrap">
@@ -783,7 +793,7 @@
     </div>
   </section>
 
-  <div class="ad-slot">Ad slot &mdash; in-content rectangle (300&times;250)</div>
+  <!-- <div class="ad-slot">Ad slot &mdash; in-content rectangle (300&times;250)</div> -->
 
   <section id="ntn">
     <h2 class="section-title">Check Your NTN / STRN Status</h2>
@@ -886,7 +896,7 @@
     </details>
   </section>
 
-  <div class="ad-slot">Ad slot &mdash; leaderboard (728&times;90 / responsive)</div>
+  <!-- <div class="ad-slot">Ad slot &mdash; leaderboard (728&times;90 / responsive)</div> -->
 
 </div>
 
