@@ -1,0 +1,160 @@
+/* Shared base styles for every non-legal page (index, the calculators, about, blog, articles).
+   Legal pages (privacy-policy.php / terms.php) are fully self-contained in legal.css instead. */
+
+:root{
+  --navy:#0A1F44;
+  --blue:#1259C3;
+  --blue-light:#3D7DFF;
+  --yellow:#FFC72C;
+  --yellow-deep:#E6A800;
+  --black:#0D0F14;
+  --ink:#14161C;
+  --ink-soft:#5A6072;
+  --line:#D7E1F2;
+  --paper:#F2F7FE;
+  --bg:#DCE6F7;
+  --tint:#E7EFFB;
+  --radius:8px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0; background:var(--bg); color:var(--ink); font-family:'Poppins', sans-serif; line-height:1.6;}
+h1,h2,h3{font-family:'Poppins', sans-serif; font-weight:700; margin:0;}
+.wrap{max-width:780px; margin:0 auto; padding:0 20px;}
+
+/* Nav bar */
+nav.site-nav{
+  position:sticky; top:0; z-index:20;
+  background:var(--black);
+  border-bottom:3px solid var(--yellow);
+}
+nav.site-nav .wrap{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:14px 20px;
+}
+.site-logo{
+  font-family:'Poppins', sans-serif; font-weight:800; font-size:19px;
+  color:#FFFFFF; text-decoration:none;
+  display:flex; align-items:center; gap:9px;
+}
+.site-logo .dot{width:9px; height:9px; border-radius:50%; background:var(--yellow); display:inline-block;}
+.nav-links{display:flex; gap:24px; list-style:none; margin:0; padding:0;}
+.nav-links a{
+  font-size:13.5px; color:#C9CFDD; text-decoration:none; font-weight:500;
+}
+.nav-links a:hover{color:var(--yellow);}
+.nav-links a.active{color:var(--yellow);}
+@media (max-width:600px){
+  .nav-links{display:none;}
+}
+
+/* Hero */
+.hero-band{
+  background:linear-gradient(120deg, var(--navy) 0%, var(--blue) 65%, var(--blue-light) 100%);
+  padding:46px 0 60px;
+  position:relative;
+}
+.hero-band .wrap{position:relative; z-index:1;}
+.hero-band::after{
+  content:"";
+  position:absolute; left:0; right:0; bottom:-1px; height:24px;
+  background-image: radial-gradient(circle at 12px 0, transparent 12px, var(--bg) 12.5px);
+  background-size:24px 24px;
+  background-repeat:repeat-x;
+}
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace;
+  font-size:12px;
+  letter-spacing:0.14em;
+  text-transform:uppercase;
+  color:var(--yellow);
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:14px;
+  font-weight:600;
+}
+.eyebrow::before{
+  content:"";
+  width:18px; height:2px;
+  background:var(--yellow);
+  display:inline-block;
+}
+h1.title{font-size:clamp(26px,5vw,36px); max-width:16ch; color:#FFFFFF; font-weight:800; line-height:1.15;}
+.sub{color:rgba(255,255,255,0.88); font-size:15.5px; max-width:52ch; margin-top:12px;}
+
+/* Calculator tab switcher (Provident Fund, SIP/CAGR) */
+.calc-tabs{
+  display:flex; gap:8px;
+  position:relative; z-index:2;
+}
+.calc-tab{
+  font-family:'Poppins', sans-serif; font-size:13.5px; font-weight:600;
+  padding:10px 18px; border-radius:24px; border:2px solid var(--line);
+  cursor:pointer; background:#fff; color:var(--ink);
+}
+.calc-tab.active{
+  background:var(--black); color:#fff; border-color:var(--black);
+}
+.panel{display:none;}
+.panel.active{display:block;}
+
+/* Calculator card (Zakat, Currency Converter, Provident Fund, SIP/CAGR) */
+.calc-card{
+  background:var(--paper); border:1px solid var(--line); border-radius:14px;
+  margin:0 0 32px; overflow:hidden;
+  box-shadow:0 24px 48px -22px rgba(10,31,68,0.35), 0 4px 14px rgba(10,31,68,0.08);
+}
+.calc-card::before{
+  content:""; display:block; height:6px;
+  background:linear-gradient(90deg, var(--navy) 0%, var(--blue) 45%, var(--yellow) 100%);
+}
+.calc-inner{padding:28px 26px;}
+.field{margin-bottom:20px;}
+label.field-label{
+  display:block; font-size:12.5px; color:var(--ink-soft);
+  margin-bottom:8px; font-family:'IBM Plex Mono', monospace;
+  text-transform:uppercase; letter-spacing:0.06em;
+}
+.amount-row{
+  display:flex; align-items:center; gap:10px;
+  border-bottom:2px solid var(--black);
+  padding-bottom:8px;
+}
+.field-grid{display:grid; grid-template-columns:1fr 1fr; gap:18px;}
+@media (max-width:480px){.field-grid{grid-template-columns:1fr;}}
+.slider-row{display:flex; align-items:center; gap:14px;}
+input[type="range"]{flex:1; accent-color:var(--blue);}
+.slider-val{font-family:'IBM Plex Mono', monospace; font-size:15px; font-weight:600; min-width:64px; text-align:right;}
+
+.results{background:var(--tint); border-radius:10px; padding:22px; margin-top:10px;}
+.stat-row{display:flex; justify-content:space-between; font-size:14px; padding:7px 0; color:var(--ink-soft);}
+.stat-row .val{font-family:'IBM Plex Mono', monospace; color:var(--ink); font-weight:600;}
+
+section{margin:40px 0;}
+h2.section-title{font-size:20px; margin-bottom:8px; font-weight:800;}
+.section-sub{color:var(--ink-soft); font-size:14px; margin-bottom:16px;}
+
+/* FAQ accordion */
+details{
+  border:1px solid var(--line);
+  border-left:4px solid var(--blue);
+  padding:14px 16px;
+  margin-bottom:10px;
+  background:var(--tint);
+  border-radius:0 8px 8px 0;
+}
+details:nth-child(3n+2){border-left-color:var(--yellow);}
+details:nth-child(3n+3){border-left-color:var(--black);}
+details summary{
+  cursor:pointer; font-weight:700; font-size:14.5px;
+  list-style:none; display:flex; justify-content:space-between; align-items:center;
+}
+details summary::-webkit-details-marker{display:none;}
+details summary::after{content:"+"; color:var(--blue); font-size:18px;}
+details[open] summary::after{content:"\2013";}
+details p{margin:10px 0 0; color:var(--ink-soft); font-size:14px;}
+
+footer{border-top:4px solid var(--yellow); background:var(--black); color:#C9CFDD; padding:34px 0 26px;}
+footer p{font-size:12.5px; color:#9AA1B4; max-width:70ch; margin:0 0 16px;}
+footer a{color:var(--yellow); text-decoration:none; font-size:13px;}

@@ -1,0 +1,34 @@
+/* Shared by the 3 blog article pages. Loaded after common.css; overrides the
+   parts of common.css that a hero-band page would use differently (this
+   family has no hero-band -- the title sits directly on the page background). */
+
+.wrap{max-width:700px;}
+body{line-height:1.7;}
+
+article header.top{padding:44px 0 8px;}
+.eyebrow{
+  font-family:'IBM Plex Mono', monospace; font-size:12px; letter-spacing:0.1em;
+  text-transform:uppercase; color:var(--navy);
+  display:flex; align-items:center; gap:10px; margin-bottom:14px; font-weight:600;
+}
+.eyebrow::before{content:""; width:18px; height:2px; background:var(--blue); display:inline-block;}
+h1.title{font-size:clamp(24px,5vw,34px); color:var(--ink); font-weight:800; line-height:1.25;}
+.meta{font-size:13px; color:var(--ink-soft); margin-top:12px; font-family:'IBM Plex Mono', monospace;}
+article{padding-bottom:20px;}
+.lede{font-size:16.5px; color:var(--ink-soft); margin:18px 0 28px;}
+h2.h-body{font-size:20px; margin:34px 0 12px; color:var(--navy);}
+p{font-size:15.5px; margin:0 0 16px;}
+strong{color:var(--navy);}
+.callout{background:var(--tint); border:1px solid var(--line); border-left:4px solid var(--yellow); border-radius:0 8px 8px 0; padding:16px 18px; margin:20px 0; font-size:14.5px; color:var(--ink);}
+.tool-promo{
+  background:linear-gradient(120deg, var(--navy), var(--blue));
+  border-radius:12px; padding:22px 24px; margin:28px 0; color:#fff;
+}
+.tool-promo p{color:rgba(255,255,255,0.9); margin-bottom:14px; font-size:14.5px;}
+.tool-promo a{
+  display:inline-block; background:var(--yellow); color:var(--black); font-weight:700;
+  padding:9px 18px; border-radius:20px; text-decoration:none; font-size:13.5px;
+}
+ol, ul{padding-left:20px; margin:0 0 16px;}
+li{font-size:15px; margin-bottom:8px;}
+footer{margin-top:20px;}

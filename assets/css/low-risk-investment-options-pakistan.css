@@ -1,0 +1,10 @@
+.option-card{
+  background:var(--paper); border:1px solid var(--line); border-radius:10px;
+  padding:20px 22px; margin:18px 0;
+}
+.option-card h3{font-size:16px; margin-bottom:6px;}
+.option-card .risk-tag{
+  display:inline-block; font-size:10.5px; font-family:'IBM Plex Mono', monospace; text-transform:uppercase;
+  background:rgba(18,89,195,0.1); color:var(--blue); padding:3px 9px; border-radius:10px; margin-bottom:8px; font-weight:600;
+}
+.option-card p{font-size:14.5px; color:var(--ink-soft); margin:0;}

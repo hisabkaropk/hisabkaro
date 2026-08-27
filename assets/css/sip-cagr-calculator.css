@@ -1,0 +1,9 @@
+.calc-tabs{margin:-40px 0 18px;}
+.calc-tab:hover{border-color:var(--blue);}
+.field{margin-bottom:22px;}
+input.sc-input{flex:1; border:none; background:transparent; font-family:'IBM Plex Mono', monospace; font-size:22px; font-weight:600; color:var(--ink); outline:none; min-width:0;}
+.sc-headline{text-align:center; padding-bottom:16px; border-bottom:1px dashed var(--line); margin-bottom:16px;}
+.sc-headline .lbl{font-size:12.5px; color:var(--ink-soft); font-family:'IBM Plex Mono', monospace; text-transform:uppercase; letter-spacing:0.06em;}
+.sc-headline .amt{font-family:'IBM Plex Mono', monospace; font-size:30px; font-weight:700; color:var(--navy); margin-top:4px;}
+.prose p{margin:0 0 14px; font-size:15px; color:var(--ink);}
+.prose strong{color:var(--navy);}

@@ -1,0 +1,18 @@
+.step-list{list-style:none; margin:0 0 20px; padding:0; counter-reset:step;}
+.step-list li{
+  counter-increment:step; display:flex; gap:16px; margin-bottom:18px;
+  background:var(--paper); border:1px solid var(--line); border-radius:10px; padding:16px 18px;
+}
+.step-list li::before{
+  content:counter(step); flex-shrink:0; width:28px; height:28px; border-radius:50%;
+  background:var(--navy); color:#fff; font-family:'IBM Plex Mono', monospace; font-weight:700; font-size:13px;
+  display:flex; align-items:center; justify-content:center;
+}
+.step-list h3{font-size:15.5px; margin-bottom:4px;}
+.step-list p{font-size:14.5px; color:var(--ink-soft); margin:0;}
+.example-box{
+  background:var(--tint); border:1px solid var(--line); border-radius:10px; padding:20px 22px; margin:22px 0;
+  font-family:'IBM Plex Mono', monospace; font-size:14px;
+}
+.example-box .ex-row{display:flex; justify-content:space-between; padding:6px 0; border-bottom:1px dashed var(--line);}
+.example-box .ex-row:last-child{border-bottom:none; font-weight:700; padding-top:10px;}
