@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'How to Save Money on Electricity Bills in Pakistan (2026 Guide)';
 $pageDescription = 'Practical, current ways to cut your electricity bill in Pakistan for 2026 -- from staying under the protected slab to what NEPRA\'s new net billing rules mean for solar.';
-$canonicalPath   = '/save-electricity-bills-pakistan.php';
+$canonicalPath   = '/save-electricity-bills-pakistan';
 $og = [
     'type'        => 'article',
     'title'       => 'How to Save Money on Electricity Bills in Pakistan',
@@ -73,6 +73,6 @@ require __DIR__ . '/includes/header.php';
 <?php
 $footerVariant = 'simple';
 $footerText    = "This article reflects NEPRA's Prosumer Regulations 2026 and general billing structure as understood at the time of publishing. Rates and slabs are revised periodically &mdash; confirm current figures with your DISCO before making decisions.";
-$backHref      = '/blog.php';
+$backHref      = '/blog';
 $backLabel     = 'Back to Blog';
 require __DIR__ . '/includes/footer.php';

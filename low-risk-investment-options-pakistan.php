@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'Best Low-Risk Investment Options for Salaried Persons in Pakistan';
 $pageDescription = 'A practical overview of low-risk investment options for salaried individuals in Pakistan -- National Savings certificates, money market funds, and Islamic alternatives.';
-$canonicalPath   = '/low-risk-investment-options-pakistan.php';
+$canonicalPath   = '/low-risk-investment-options-pakistan';
 $og = [
     'type'        => 'article',
     'title'       => $pageTitle,
@@ -86,6 +86,6 @@ require __DIR__ . '/includes/header.php';
 <?php
 $footerVariant = 'simple';
 $footerText    = "This article is educational content, not financial advice, and not a recommendation to buy any specific product. Rates mentioned are illustrative ranges, not current quotes &mdash; verify with CDNS, your bank, or a licensed advisor before investing.";
-$backHref      = '/blog.php';
+$backHref      = '/blog';
 $backLabel     = 'Back to Blog';
 require __DIR__ . '/includes/footer.php';

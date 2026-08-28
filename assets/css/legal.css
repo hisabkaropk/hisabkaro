@@ -9,7 +9,7 @@
 *{box-sizing:border-box;}
 body{margin:0; background:var(--bg); color:var(--ink); font-family:'Poppins',sans-serif; line-height:1.6;}
 h1,h2{font-family:'Poppins',sans-serif; font-weight:700; margin:0;}
-.wrap{max-width:720px; margin:0 auto; padding:0 20px;}
+.wrap{max-width:720px; margin:0 auto; padding:40px 20px;}
 nav.site-nav{position:sticky; top:0; z-index:10; background:var(--black); border-bottom:3px solid var(--yellow);}
 nav.site-nav .wrap{display:flex; align-items:center; justify-content:space-between; padding:14px 20px;}
 .site-logo{font-family:'Poppins',sans-serif; font-weight:800; font-size:18px; color:#FFFFFF; text-decoration:none; display:flex; align-items:center; gap:8px;}

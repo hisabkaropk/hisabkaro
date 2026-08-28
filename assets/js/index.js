@@ -84,11 +84,13 @@ zakatInput.addEventListener('input', calc);
 calc();
 
 function switchCalc(name){
+  console.log('Switching to calc panel:', name);
+
   document.querySelectorAll('.calc-tab').forEach(function(btn){
     btn.classList.toggle('active', btn.dataset.panel === name);
   });
   document.querySelectorAll('.panel').forEach(function(panel){
-    panel.style.display = (panel.id === 'panel-' + name) ? '' : 'none';
+    panel.style.display = (panel.id === 'panel-' + name) ? 'block' : 'none';
   });
 }
 

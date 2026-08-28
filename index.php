@@ -22,7 +22,7 @@ $jsonLd = [
   "name": "Pakistan Salary Tax Calculator FY 2026-27",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any",
-  "url": "https://YOURDOMAIN.pk/",
+  "url": "https://hisabkaro.pk/",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
   "description": "Free calculator for take-home salary in Pakistan using official FBR income tax slabs for tax year 2026-27."
 }
@@ -117,7 +117,7 @@ require __DIR__ . '/includes/header.php';
 
   <div class="payslip">
 
-    <div class="payslip-inner panel" id="panel-salary">
+    <div class="payslip-inner panel" id="panel-salary" style="display:block;">
       <div class="payslip-head">
         <h2>Salary Slip Estimate</h2>
         <span class="fy-tag">FY 2026-2027</span>
@@ -331,27 +331,27 @@ require __DIR__ . '/includes/header.php';
         <h3>Filer vs Non-Filer</h3>
         <p>See the actual WHT difference on your specific transaction type.</p>
       </div>
-      <a class="tool-card" href="emi-calculator.php" style="text-decoration:none; color:inherit; display:block;">
+      <a class="tool-card" href="emi-calculator" style="text-decoration:none; color:inherit; display:block;">
         <span class="soon-tag live-tag">Live</span>
         <h3>EMI Calculator</h3>
         <p>Monthly installment for car, home, or personal loans, with a year-by-year breakdown.</p>
       </a>
-      <a class="tool-card" href="zakat-calculator.php" style="text-decoration:none; color:inherit; display:block;">
+      <a class="tool-card" href="zakat-calculator" style="text-decoration:none; color:inherit; display:block;">
         <span class="soon-tag live-tag">Live</span>
         <h3>Zakat Calculator</h3>
         <p>Nisab-based zakat on cash, gold, silver, and business assets.</p>
       </a>
-      <a class="tool-card" href="currency-converter.php" style="text-decoration:none; color:inherit; display:block;">
+      <a class="tool-card" href="currency-converter" style="text-decoration:none; color:inherit; display:block;">
         <span class="soon-tag live-tag">Live</span>
         <h3>Currency Converter</h3>
         <p>PKR to USD, SAR, AED, GBP and more, with daily reference rates.</p>
       </a>
-      <a class="tool-card" href="sip-cagr-calculator.php" style="text-decoration:none; color:inherit; display:block;">
+      <a class="tool-card" href="sip-cagr-calculator" style="text-decoration:none; color:inherit; display:block;">
         <span class="soon-tag live-tag">Live</span>
         <h3>SIP &amp; CAGR Calculator</h3>
         <p>Mutual fund investment returns and compound growth rate.</p>
       </a>
-      <a class="tool-card" href="provident-fund-pension-calculator.php" style="text-decoration:none; color:inherit; display:block;">
+      <a class="tool-card" href="provident-fund-pension-calculator" style="text-decoration:none; color:inherit; display:block;">
         <span class="soon-tag live-tag">Live</span>
         <h3>Provident Fund &amp; EOBI Pension</h3>
         <p>PF growth projection and EOBI pension estimate at retirement.</p>

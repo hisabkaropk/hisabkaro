@@ -5,7 +5,7 @@
  * Pages set these variables before requiring this file:
  *   $footerVariant string  'full' | 'simple' | 'legal'  (default 'simple')
  *   $footerText    string  raw HTML for the disclaimer paragraph -- 'simple' variant only
- *   $backHref      string  e.g. '/' or '/blog.php'        -- 'simple' variant only
+ *   $backHref      string  e.g. '/' or '/blog'             -- 'simple' variant only
  *   $backLabel     string  e.g. 'Back to Hisabkaro Home'    -- 'simple' variant only
  *   $pageScript    string|null  filename under assets/js/ to load before </body>
  */
@@ -35,17 +35,17 @@ $pageScript    = $pageScript    ?? null;
         <h4>Resources</h4>
         <ul>
           <li><a href="#faq">FAQ</a></li>
-          <li><a href="/blog.php">Blog</a></li>
-          <li><a href="/about.php">About Us</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/about">About Us</a></li>
           <li><a href="https://iris.fbr.gov.pk" target="_blank" rel="noopener">FBR IRIS Portal</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Site</h4>
         <ul>
-          <li><a href="/privacy-policy.php">Privacy Policy</a></li>
-          <li><a href="/terms.php">Terms of Use</a></li>
-          <li><a href="mailto:hello@yourdomain.pk">Contact</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/terms">Terms of Use</a></li>
+          <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
     </div>

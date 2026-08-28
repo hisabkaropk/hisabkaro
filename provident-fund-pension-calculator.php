@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'Provident Fund & EOBI Pension Calculator Pakistan';
 $pageDescription = 'Project your Provident Fund balance at retirement, or estimate your EOBI pension using the official formula. Free calculators for Pakistan.';
-$canonicalPath   = '/provident-fund-pension-calculator.php';
+$canonicalPath   = '/provident-fund-pension-calculator';
 $og = [
     'type'        => 'website',
     'title'       => 'Provident Fund & EOBI Pension Calculator Pakistan',
@@ -16,7 +16,7 @@ $jsonLd = [
   "name": "Provident Fund and EOBI Pension Calculator Pakistan",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any",
-  "url": "https://YOURDOMAIN.pk/provident-fund-pension-calculator.php",
+  "url": "https://hisabkaro.pk/provident-fund-pension-calculator",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
   "description": "Free Provident Fund growth projector and EOBI pension estimator for Pakistan."
 }

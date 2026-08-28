@@ -1,0 +1,68 @@
+main{padding:8px 0 20px;}
+.card{background:var(--paper); border:1px solid var(--line); border-radius:14px; padding:30px 28px; margin-bottom:24px;}
+h2.section-title{margin-bottom:12px; color:var(--navy);}
+p{font-size:15.5px; color:var(--ink); margin:0 0 14px;}
+
+.contact-card{padding-bottom:34px;}
+
+.form-notice{
+  border-radius:8px;
+  padding:14px 16px;
+  margin-bottom:22px;
+  font-size:14px;
+}
+.form-notice ul{margin:8px 0 0; padding-left:20px;}
+.form-notice li{margin-bottom:4px;}
+.form-success{
+  background:rgba(18,89,195,0.08);
+  border:1.5px solid var(--blue);
+  color:var(--ink);
+}
+.form-error{
+  background:rgba(255,199,44,0.2);
+  border:1.5px solid var(--yellow-deep);
+  color:#7A5900;
+}
+
+.contact-form .field{margin-bottom:20px;}
+.optional{text-transform:none; font-weight:400; letter-spacing:normal; color:var(--ink-soft);}
+
+.form-input{
+  width:100%;
+  border:1.5px solid var(--line);
+  border-radius:8px;
+  background:#fff;
+  padding:11px 14px;
+  font-family:'Poppins', sans-serif;
+  font-size:15px;
+  color:var(--ink);
+  outline:none;
+}
+.form-input:focus{border-color:var(--blue);}
+.form-textarea{resize:vertical; min-height:140px; font-family:'Poppins', sans-serif;}
+
+/* Honeypot -- hidden from sighted users and screen readers alike, but still in the DOM for bots that auto-fill every field. */
+.hp-field{
+  position:absolute;
+  left:-9999px;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+}
+
+.btn-submit{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:var(--black);
+  color:var(--yellow);
+  border:none;
+  font-family:'Poppins', sans-serif;
+  font-weight:700;
+  font-size:14.5px;
+  padding:13px 28px;
+  border-radius:26px;
+  cursor:pointer;
+  transition:background 0.15s ease, transform 0.15s ease;
+}
+.btn-submit:hover{background:var(--navy); transform:translateY(-1px);}

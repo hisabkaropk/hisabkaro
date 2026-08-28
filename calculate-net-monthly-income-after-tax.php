@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'How to Calculate Your Net Monthly Income After Tax in Pakistan';
 $pageDescription = 'A step-by-step guide to calculating your real take-home salary in Pakistan after income tax, using the FY 2026-27 FBR slabs.';
-$canonicalPath   = '/calculate-net-monthly-income-after-tax.php';
+$canonicalPath   = '/calculate-net-monthly-income-after-tax';
 $og = [
     'type'        => 'article',
     'title'       => $pageTitle,
@@ -101,6 +101,6 @@ require __DIR__ . '/includes/header.php';
 <?php
 $footerVariant = 'simple';
 $footerText    = "Based on FY 2026-27 FBR income tax slabs (Finance Act 2026), effective July 1, 2026. This is educational content, not tax advice &mdash; for filing, consult a licensed tax practitioner or FBR's IRIS portal.";
-$backHref      = '/blog.php';
+$backHref      = '/blog';
 $backLabel     = 'Back to Blog';
 require __DIR__ . '/includes/footer.php';

@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'SIP & CAGR Calculator Pakistan | Mutual Fund Returns';
 $pageDescription = 'Calculate SIP investment returns and CAGR (compound annual growth rate) for mutual funds and other investments in Pakistan. Free, instant.';
-$canonicalPath   = '/sip-cagr-calculator.php';
+$canonicalPath   = '/sip-cagr-calculator';
 $og = [
     'type'        => 'website',
     'title'       => 'SIP & CAGR Calculator Pakistan',
@@ -16,7 +16,7 @@ $jsonLd = [
   "name": "SIP and CAGR Calculator Pakistan",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any",
-  "url": "https://YOURDOMAIN.pk/sip-cagr-calculator.php",
+  "url": "https://hisabkaro.pk/sip-cagr-calculator",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
   "description": "Free SIP and CAGR calculator for mutual fund and investment returns in Pakistan."
 }

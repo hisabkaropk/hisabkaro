@@ -5,7 +5,7 @@
  * Pages set these variables before requiring this file:
  *   $pageTitle       string   required
  *   $pageDescription string   required
- *   $canonicalPath   string   e.g. '/', '/zakat-calculator.php'
+ *   $canonicalPath   string   e.g. '/', '/zakat-calculator' -- extension-less; see .htaccess
  *   $og              array|null  ['type'=>, 'title'=>, 'description'=>, 'path'=>, 'image'=>(optional)]
  *   $twitter         array|null  ['title'=>, 'description'=>, 'image'=>]
  *   $jsonLd          array    raw JSON strings, each wrapped in its own <script type="application/ld+json">
@@ -24,7 +24,7 @@ $pageStyles      = $pageStyles      ?? ['common.css'];
 $navVariant      = $navVariant      ?? 'content';
 $currentPage     = $currentPage     ?? '';
 
-$siteBaseUrl  = 'https://YOURDOMAIN.pk';
+$siteBaseUrl  = 'https://hisabkaro.pk';
 $canonicalUrl = $siteBaseUrl . $canonicalPath;
 
 $navPresets = [
@@ -34,23 +34,23 @@ $navPresets = [
         ['label' => 'Tax Slabs',  'href' => '#slabs'],
         ['label' => 'Check NTN',  'href' => '#ntn'],
         ['label' => 'FAQ',        'href' => '#faq'],
-        ['label' => 'Blog',       'href' => '/blog.php', 'slug' => 'blog'],
+        ['label' => 'Blog',       'href' => '/blog', 'slug' => 'blog'],
         ['label' => 'More Tools', 'href' => '#tools'],
     ],
     'calc' => [
         ['label' => 'Home',       'href' => '/', 'slug' => 'home'],
-        ['label' => 'Blog',       'href' => '/blog.php', 'slug' => 'blog'],
+        ['label' => 'Blog',       'href' => '/blog', 'slug' => 'blog'],
         ['label' => 'More Tools', 'href' => '/#tools'],
         ['label' => 'FAQ',        'href' => '#faq'],
     ],
     'content' => [
         ['label' => 'Home',       'href' => '/', 'slug' => 'home'],
-        ['label' => 'Blog',       'href' => '/blog.php', 'slug' => 'blog'],
+        ['label' => 'Blog',       'href' => '/blog', 'slug' => 'blog'],
         ['label' => 'More Tools', 'href' => '/#tools'],
     ],
     'blog' => [
         ['label' => 'Home',       'href' => '/', 'slug' => 'home'],
-        ['label' => 'About',      'href' => '/about.php', 'slug' => 'about'],
+        ['label' => 'About',      'href' => '/about', 'slug' => 'about'],
         ['label' => 'More Tools', 'href' => '/#tools'],
     ],
     'legal' => [

@@ -4,7 +4,7 @@
 h1.title{font-size:clamp(28px,5vw,40px); max-width:13ch;}
 .sub{font-size:16px; max-width:50ch;}
 
-.calc-tabs{margin:-46px 0 18px; flex-wrap:wrap;}
+.calc-tabs{margin:-65px 0 18px; flex-wrap:wrap;}
 .calc-tab{display:inline-flex; align-items:center; gap:6px; transition:transform 0.15s ease;}
 .calc-tab:hover{transform:translateY(-1px); border-color:var(--blue);}
 
@@ -37,9 +37,9 @@ h1.title{font-size:clamp(28px,5vw,40px); max-width:13ch;}
 /* Payslip card (homepage salary calculator) */
 .payslip{
   background:var(--paper);
-  border:1px solid var(--line);
+  /* border:1px solid var(--line); */
   border-radius:14px;
-  margin:0 0 40px;
+  margin:45px 0 40px;
   position:relative;
   overflow:hidden;
   box-shadow:0 24px 48px -22px rgba(10,31,68,0.35), 0 4px 14px rgba(10,31,68,0.08);
@@ -251,7 +251,7 @@ table.slabs tr:last-child td{border-bottom:none;}
 }
 .ntn-cta:hover{background:var(--navy);}
 
-.tools-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:14px;}
+.tools-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:14px;}
 .tool-card{
   background:var(--paper); border:1px solid var(--line); border-radius:10px;
   padding:18px; position:relative;

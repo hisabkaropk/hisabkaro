@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'Currency Converter Pakistan | PKR to USD, SAR, AED, GBP';
 $pageDescription = 'Convert PKR to USD, SAR, AED, GBP, EUR and more. Free currency converter with daily reference rates, useful for overseas Pakistanis and remittances.';
-$canonicalPath   = '/currency-converter.php';
+$canonicalPath   = '/currency-converter';
 $og = [
     'type'        => 'website',
     'title'       => 'Currency Converter Pakistan',
@@ -16,7 +16,7 @@ $jsonLd = [
   "name": "Currency Converter Pakistan",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any",
-  "url": "https://YOURDOMAIN.pk/currency-converter.php",
+  "url": "https://hisabkaro.pk/currency-converter",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
   "description": "Free currency converter for PKR to USD, SAR, AED, GBP, EUR and more, using daily ECB reference rates."
 }

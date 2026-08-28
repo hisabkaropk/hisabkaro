@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'About Us | Hisabkaro';
 $pageDescription = 'Hisabkaro.pk is a free, independent home for financial calculators and practical money guides built for Pakistani households, freelancers, and salaried individuals.';
-$canonicalPath   = '/about.php';
+$canonicalPath   = '/about';
 $pageStyles      = ['common.css', 'about.css'];
 $navVariant      = 'content';
 $currentPage     = 'about';
@@ -56,7 +56,7 @@ require __DIR__ . '/includes/header.php';
 
     <div class="card">
       <h2 class="section-title">A Note on Accuracy</h2>
-      <p>Every calculator here is built with real, sourced figures from FBR, NEPRA, EOBI, and other official bodies &mdash; and where a number changes too often to trust (like gold prices or bank profit rates), we ask you to enter today's figure yourself rather than showing you something stale. Where we haven't verified a rate carefully enough, we say so rather than guess. See our <a href="terms.php" style="color:var(--blue); font-weight:600;">Terms of Use</a> for the full picture on what these tools are (and aren't).</p>
+      <p>Every calculator here is built with real, sourced figures from FBR, NEPRA, EOBI, and other official bodies &mdash; and where a number changes too often to trust (like gold prices or bank profit rates), we ask you to enter today's figure yourself rather than showing you something stale. Where we haven't verified a rate carefully enough, we say so rather than guess. See our <a href="terms" style="color:var(--blue); font-weight:600;">Terms of Use</a> for the full picture on what these tools are (and aren't).</p>
     </div>
 
   </main>

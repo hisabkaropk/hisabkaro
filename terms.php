@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'Terms of Use | Hisabkaro';
 $pageDescription = 'Terms of use for Hisabkaro\'s free Pakistan tax calculators — what the tools are, their limitations, and disclaimers.';
-$canonicalPath   = '/terms.php';
+$canonicalPath   = '/terms';
 $pageStyles      = ['legal.css'];
 $navVariant      = 'legal';
 $currentPage     = 'terms';
@@ -43,7 +43,7 @@ require __DIR__ . '/includes/header.php';
   <p>These terms are governed by the laws of Pakistan.</p>
 
   <h2>Contact</h2>
-  <p>Questions can be sent to <a href="mailto:hello@yourdomain.pk">hello@yourdomain.pk</a>.</p>
+  <p>Questions can be sent to <a href="mailto:connect@hisabkaro.pk">connect@hisabkaro.pk</a>.</p>
 </main>
 
 <?php

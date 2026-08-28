@@ -119,7 +119,7 @@ def parse_date(raw: str):
 def fetch_press_releases():
     headers = {
         "User-Agent": "Mozilla/5.0 (compatible; HisabKaroUpdatesBot/1.0; "
-                      "+https://YOURDOMAIN.pk/about-updates-bot)"
+                      "+https://hisabkaro.pk/about-updates-bot)"
     }
     resp = requests.get(FBR_PRESS_RELEASE_URL, headers=headers, timeout=20)
     resp.raise_for_status()

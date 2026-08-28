@@ -20,7 +20,7 @@
 html{scroll-behavior:smooth;}
 body{margin:0; background:var(--bg); color:var(--ink); font-family:'Poppins', sans-serif; line-height:1.6;}
 h1,h2,h3{font-family:'Poppins', sans-serif; font-weight:700; margin:0;}
-.wrap{max-width:780px; margin:0 auto; padding:0 20px;}
+.wrap{max-width:1100px; margin:0 auto; padding:0 20px;}
 
 /* Nav bar */
 nav.site-nav{
@@ -55,13 +55,13 @@ nav.site-nav .wrap{
   position:relative;
 }
 .hero-band .wrap{position:relative; z-index:1;}
-.hero-band::after{
+/* .hero-band::after{
   content:"";
   position:absolute; left:0; right:0; bottom:-1px; height:24px;
   background-image: radial-gradient(circle at 12px 0, transparent 12px, var(--bg) 12.5px);
   background-size:24px 24px;
   background-repeat:repeat-x;
-}
+} */
 .eyebrow{
   font-family:'IBM Plex Mono', monospace;
   font-size:12px;

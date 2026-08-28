@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'Zakat Calculator Pakistan | Nisab-Based Zakat Calculation';
 $pageDescription = 'Calculate your annual Zakat on cash, gold, silver, and business assets using the correct Nisab threshold. Free, instant, based on standard Islamic jurisprudence.';
-$canonicalPath   = '/zakat-calculator.php';
+$canonicalPath   = '/zakat-calculator';
 $og = [
     'type'        => 'website',
     'title'       => 'Zakat Calculator Pakistan',
@@ -16,7 +16,7 @@ $jsonLd = [
   "name": "Zakat Calculator Pakistan",
   "applicationCategory": "FinanceApplication",
   "operatingSystem": "Any",
-  "url": "https://YOURDOMAIN.pk/zakat-calculator.php",
+  "url": "https://hisabkaro.pk/zakat-calculator",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "PKR" },
   "description": "Free Zakat calculator for cash, gold, silver, and business assets using Nisab-based Islamic jurisprudence."
 }

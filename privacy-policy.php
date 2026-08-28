@@ -1,7 +1,7 @@
 <?php
 $pageTitle       = 'Privacy Policy | Hisabkaro';
 $pageDescription = 'Privacy policy for Hisabkaro\'s free Pakistan salary tax calculator — what data is collected, cookies used, and how to contact us.';
-$canonicalPath   = '/privacy-policy.php';
+$canonicalPath   = '/privacy-policy';
 $pageStyles      = ['legal.css'];
 $navVariant      = 'legal';
 $currentPage     = 'privacy-policy';
@@ -37,7 +37,7 @@ require __DIR__ . '/includes/header.php';
   <p>We may update this policy as the site grows — for example, if we add features that require data storage. Material changes will be reflected on this page with an updated date.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy can be sent to <a href="mailto:hello@yourdomain.pk">hello@yourdomain.pk</a>.</p>
+  <p>Questions about this policy can be sent to <a href="mailto:connect@hisabkaro.pk">connect@hisabkaro.pk</a>.</p>
 </main>
 
 <?php

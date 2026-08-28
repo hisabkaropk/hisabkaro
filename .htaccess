@@ -1,0 +1,17 @@
+DirectoryIndex index.php
+
+RewriteEngine On
+
+# Canonicalize: if a visitor (or an old link/bookmark) requests the .php file
+# directly, send them to the extension-less URL instead of serving duplicate
+# content at two addresses.
+RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.php[\s?] [NC]
+RewriteRule ^ /%1 [R=301,L]
+
+# Internally map the extension-less URL to the actual .php file. This is a
+# server-side rewrite (no redirect), so the browser's address bar keeps
+# showing the clean URL, and it preserves POST bodies (needed for the
+# contact form posting to /contact).
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^([^/.]+)$ $1.php [L]
